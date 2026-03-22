@@ -1,5 +1,8 @@
 # Kanban Code → Web Application: Feature Parity Analysis
 
+> **Status:** ✅ **COMPLETED & IMPLEMENTED**
+> This analysis served as the blueprint for the web port. All recommended features have been implemented in the Node.js/React stack.
+
 ## TL;DR
 
 **Yes, almost every feature can be kept as-is.** Terminal sessions resume, history tabs, prompt tabs, activity tracking, image paste — all of it works in a web context. The project already has a working proof-of-concept in `windows/` (Tauri 2 + React + xterm.js). The only features that truly cannot exist in a pure browser app are system tray and Amphetamine sleep prevention. Everything else has full or near-full parity.

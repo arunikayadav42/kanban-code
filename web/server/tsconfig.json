@@ -8,7 +8,7 @@
       "@kanban-code/shared": ["../shared/src"],
       "@kanban-code/shared/*": ["../shared/src/*"]
     },
-    "noEmit": true
+    "noEmit": false
   },
   "include": ["src/**/*", "../shared/src/**/*"]
 }

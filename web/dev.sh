@@ -154,7 +154,6 @@ mkdir -p "$HOME/.kanban-code"
 if [ -f "$HOOK_SOURCE" ]; then
   cp "$HOOK_SOURCE" "$HOOK_SCRIPT"
   chmod +x "$HOOK_SCRIPT"
-  xattr -d com.apple.quarantine "$HOOK_SCRIPT" 2>/dev/null || true
 fi
 
 # Auto-install Kiro agent if kiro-cli is available

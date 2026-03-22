@@ -7,6 +7,10 @@ methodology: "Superpowers brainstorming + systematic debugging"
 
 # Kanban Code — Complete Reverse Engineering Analysis
 
+> **⚠️ NOTE: REFERENCE ONLY**
+> This document describes the **original native Swift (macOS) implementation**. 
+> While the core logic (reconciliation, state management, entity models) was ported 1:1 to the **TypeScript/Web version**, the tech stack and file structure sections here are specific to the legacy Swift codebase and serve only as architectural history.
+
 > **Date:** 2026-03-14 | **Scope:** Every feature, every subsystem, every data flow
 > **Methodology:** Systematic Phase 1 root-cause investigation applied to reverse engineering — read everything, trace data flows, map dependencies before drawing conclusions.
 
