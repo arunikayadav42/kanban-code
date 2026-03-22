@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "..",
+    "baseUrl": ".",
+    "paths": {
+      "@kanban-code/shared": ["../shared/src"],
+      "@kanban-code/shared/*": ["../shared/src/*"]
+    },
+    "noEmit": true
+  },
+  "include": ["src/**/*", "../shared/src/**/*"]
+}

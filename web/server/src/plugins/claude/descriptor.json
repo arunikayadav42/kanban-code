@@ -1,0 +1,29 @@
+{
+  "id": "claude",
+  "displayName": "Claude Code",
+  "shortName": "Claude",
+  "cliCommand": "claude",
+  "availabilityCheck": "claude",
+  "promptCharacter": "\u276f",
+  "autoApproveFlag": "--dangerously-skip-permissions",
+  "resumeFlag": "--resume",
+  "configDirName": ".claude",
+  "historySymbol": "\u276f",
+  "installCommand": "npm install -g @anthropic-ai/claude-code",
+  "supportsWorktree": true,
+  "supportsImageUpload": true,
+  "needsRemotePathOverride": false,
+  "usesPasteInput": false,
+  "readyTimeoutMs": 30000,
+  "color": "#f97316",
+  "hooks": {
+    "events": ["Stop", "Notification", "SessionStart", "SessionEnd", "UserPromptSubmit"],
+    "configPath": "settings.json",
+    "configFormat": "nested",
+    "normalize": {}
+  },
+  "icon": {
+    "svgPath": "M3 3h10v10H3z",
+    "viewBox": "0 0 16 16"
+  }
+}

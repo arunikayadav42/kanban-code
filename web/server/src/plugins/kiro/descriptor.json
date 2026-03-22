@@ -1,0 +1,29 @@
+{
+  "id": "kiro",
+  "displayName": "Kiro CLI",
+  "shortName": "Kiro",
+  "cliCommand": "kiro-cli chat --agent kanban_code",
+  "availabilityCheck": "kiro-cli",
+  "promptCharacter": "> ",
+  "autoApproveFlag": "--trust-all-tools",
+  "resumeFlag": "--resume",
+  "configDirName": ".kiro",
+  "historySymbol": ">",
+  "installCommand": "curl -fsSL https://cli.kiro.dev/install | bash",
+  "supportsWorktree": false,
+  "supportsImageUpload": true,
+  "needsRemotePathOverride": false,
+  "usesPasteInput": false,
+  "readyTimeoutMs": 30000,
+  "color": "#22c55e",
+  "hooks": {
+    "events": ["stop", "userPromptSubmit", "agentSpawn"],
+    "configPath": "agents/kanban_code.json",
+    "configFormat": "flat",
+    "normalize": { "agentSpawn": "SessionStart", "stop": "Stop", "userPromptSubmit": "UserPromptSubmit" }
+  },
+  "icon": {
+    "svgPath": "M13 3L4 14h5l-1 7 9-11h-5l1-7z",
+    "viewBox": "0 0 24 24"
+  }
+}

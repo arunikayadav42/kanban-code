@@ -1,0 +1,29 @@
+{
+  "id": "gemini",
+  "displayName": "Gemini CLI",
+  "shortName": "Gemini",
+  "cliCommand": "gemini",
+  "availabilityCheck": "gemini",
+  "promptCharacter": "Type your message",
+  "autoApproveFlag": "--yolo",
+  "resumeFlag": "--resume",
+  "configDirName": ".gemini",
+  "historySymbol": "\u2726",
+  "installCommand": "npm install -g @google/gemini-cli",
+  "supportsWorktree": false,
+  "supportsImageUpload": false,
+  "needsRemotePathOverride": true,
+  "usesPasteInput": true,
+  "readyTimeoutMs": 60000,
+  "color": "#3b82f6",
+  "hooks": {
+    "events": ["AfterAgent", "Notification", "SessionStart", "SessionEnd", "BeforeAgent"],
+    "configPath": "settings.json",
+    "configFormat": "nested",
+    "normalize": { "AfterAgent": "Stop", "BeforeAgent": "UserPromptSubmit" }
+  },
+  "icon": {
+    "svgPath": "M8 1l2.5 5 5.5.8-4 3.9.9 5.3L8 13.5 3.1 16l.9-5.3L0 6.8l5.5-.8z",
+    "viewBox": "0 0 16 16"
+  }
+}
